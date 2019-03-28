@@ -1,0 +1,471 @@
+38.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:09:03.10 (10446135)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (11320878)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (13693942)|SOQL_EXECUTE_BEGIN|[66]|Aggregations:0|SELECT Id FROM Folder WHERE DeveloperName = 'SMS_APP' LIMIT 1
+17:09:03.10 (17885465)|SOQL_EXECUTE_END|[66]|Rows:1
+17:09:03.10 (18160348)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (19315908)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (19626373)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (32490817)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (32552212)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (86326701)|SOQL_EXECUTE_BEGIN|[1842]|Aggregations:0|SELECT Id, name FROM RecordType WHERE (sObjectType = :tmpVar1 AND name = :tmpVar2) LIMIT 1
+17:09:03.10 (95991313)|SOQL_EXECUTE_END|[1842]|Rows:1
+17:09:03.10 (102599849)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (143271216)|SOQL_EXECUTE_BEGIN|[275]|Aggregations:0|Select Id, tdc_tsw__account__c, tdc_tsw__campaign__c, tdc_tsw__case__c, tdc_tsw__contact__c, tdc_tsw__lead__c, tdc_tsw__message__c, tdc_tsw__opportunity__c, tdc_tsw__sms_template__c, tdc_tsw__question__c, tdc_tsw__survey_response__c, OwnerId, Related_Object__c,Is_Keyword_Based__c,Sender_Number__c,ToNumber__c, Related_Object_Id__c from Message__c where Name = 'Outgoing' and (Sender_Number__c =: cleantoNumber  OR Sender_Number__c LIKE : toNumberWithoutSymbol )  and (ToNumber__c =: cleanFromNumber  OR ToNumber__c LIKE : fromNumberWithoutSymbol )  Order By CreatedDate Desc Limit 1
+17:09:03.10 (150386304)|SOQL_EXECUTE_END|[275]|Rows:1
+17:09:03.10 (151406614)|SOQL_EXECUTE_BEGIN|[299]|Aggregations:0|SELECT Id FROM tdc_tsw__Message__c WHERE id =: relatedObjId
+17:09:03.10 (153888204)|SOQL_EXECUTE_END|[299]|Rows:1
+17:09:03.10 (154122105)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (156381934)|SOQL_EXECUTE_BEGIN|[923]|Aggregations:0|SELECT id, isActive FROM User WHERE id = :tmpVar1 LIMIT 1
+17:09:03.10 (162603806)|SOQL_EXECUTE_END|[923]|Rows:1
+17:09:03.10 (164327527)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (168773333)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (189868600)|DML_BEGIN|[557]|Op:Insert|Type:tdc_tsw__Message__c|Rows:1
+17:09:03.10 (205956349)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.207 (207920572)|CUMULATIVE_LIMIT_USAGE
+17:09:03.207 (207920572)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:03.207 (207920572)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:03.207 (207920572)|CUMULATIVE_LIMIT_USAGE_END
+
+17:09:03.10 (283870565)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (288024882)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (288647911)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (288836758)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (292833040)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|SELECT Id, Email FROM User WHERE isActive = TRUE LIMIT 10000
+17:09:03.10 (298409421)|SOQL_EXECUTE_END|[15]|Rows:9
+17:09:03.10 (300150420)|SOQL_EXECUTE_BEGIN|[42]|Aggregations:0|SELECT Id, Sender_Name__c, Sender_Number__c FROM Message__c WHERE id = :tmpVar1
+17:09:03.10 (302976452)|SOQL_EXECUTE_END|[42]|Rows:1
+17:09:03.10 (304731887)|SOQL_EXECUTE_BEGIN|[70]|Aggregations:0|select Name from tdc_tsw__Message__c where id = 'a173B000000sdzDQAQ'
+17:09:03.10 (307266484)|SOQL_EXECUTE_END|[70]|Rows:1
+17:09:03.10 (308120761)|DML_BEGIN|[97]|Op:Update|Type:tdc_tsw__Message__c|Rows:1
+17:09:03.10 (334156713)|DML_END|[97]
+17:09:03.10 (339099517)|SOQL_EXECUTE_BEGIN|[236]|Aggregations:0|SELECT id, subject, developername, htmlValue, body FROM EmailTemplate WHERE developername = 'Incoming_Message_Alert' LIMIT 1
+17:09:03.10 (396535296)|SOQL_EXECUTE_END|[236]|Rows:1
+17:09:03.10 (401045757)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (401113351)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (433770390)|SOQL_EXECUTE_BEGIN|[758]|Aggregations:0|select tdc_tsw__ToNumber__c, tdc_tsw__Sender_Number__c, tdc_tsw__Sender_Name__c, Id, tdc_tsw__Related_Object_Id_URL__c, tdc_tsw__Message_Text_New__c from tdc_tsw__Message__c where id ='a173B000000se1OQAQ' Limit 1
+17:09:03.10 (444530589)|SOQL_EXECUTE_END|[758]|Rows:1
+17:09:03.10 (445850199)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (446765730)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (447755540)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (448938022)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (449741337)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (450551724)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (451208167)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (475361665)|SOQL_EXECUTE_BEGIN|[758]|Aggregations:0|select tdc_tsw__ToNumber__c, tdc_tsw__Sender_Number__c, tdc_tsw__Sender_Name__c, tdc_tsw__Related_Object_Id_URL__c, tdc_tsw__Message_Text_New__c from tdc_tsw__Message__c where id ='a173B000000se1OQAQ' Limit 1
+17:09:03.10 (484841938)|SOQL_EXECUTE_END|[758]|Rows:1
+17:09:03.10 (501821637)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (502647018)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (503419035)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (504195437)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (504950103)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (505945798)|SOQL_EXECUTE_BEGIN|[248]|Aggregations:0|SELECT Id, IsSandbox, Name FROM Organization LIMIT 1
+17:09:03.10 (510893097)|SOQL_EXECUTE_END|[248]|Rows:1
+17:09:03.10 (512306650)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (516958123)|SOQL_EXECUTE_BEGIN|[434]|Aggregations:0|SELECT id, name, First_Question__c, Question_Text__c, Question__c, Question_Label__c, Object__c, tdc_tsw__Survey__c, Survey__r.name FROM Question__c WHERE id = :tmpVar1
+17:09:03.10 (520853093)|SOQL_EXECUTE_END|[434]|Rows:0
+17:09:03.10 (521591671)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:03.10 (523227762)|SOQL_EXECUTE_BEGIN|[628]|Aggregations:0|Select id, leadId, contactId from CampaignMember where Id In : Ids
+17:09:03.10 (525619962)|SOQL_EXECUTE_END|[628]|Rows:0
+17:09:03.526 (526270031)|CUMULATIVE_LIMIT_USAGE
+17:09:03.526 (526270031)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 167 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:03.526 (526270031)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 14 out of 100
+  Number of query rows: 20 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:03.526 (526270031)|CUMULATIVE_LIMIT_USAGE_END
+
+17:09:03.651 (651583796)|PUSH_TRACE_FLAGS|[EXTERNAL]|01p3B000001izES|PhoneMatcher|APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:09:03.651 (651624411)|CODE_UNIT_STARTED|[EXTERNAL]|01p3B000001izES|PhoneMatcher.MatchContactOnPhoneNunber(List<tdc_tsw__Message__c>)
+17:09:03.651 (651732854)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:09:03.651 (651820924)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+17:09:03.651 (651854858)|METHOD_ENTRY|[5]|01p3B000001izES|PhoneMatcher.PhoneMatcher()
+17:09:03.651 (651864755)|STATEMENT_EXECUTE|[5]
+17:09:03.651 (651871710)|STATEMENT_EXECUTE|[5]
+17:09:03.651 (651879369)|METHOD_EXIT|[5]|PhoneMatcher
+17:09:03.651 (651917433)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:09:03.651 (651935737)|VARIABLE_SCOPE_BEGIN|[8]|messages|List<tdc_tsw__Message__c>|true|false
+17:09:03.651 (654730846)|VARIABLE_ASSIGNMENT|[8]|messages|[{"LastModifiedDate":"2019-01-21T22:09:03.000Z","tdc_tsw__ToNumber__c":"+17065037067","tdc_tsw__Sender_Number__c":"+13038816946","tdc_tsw__Read__c":false,"tdc_tsw__Read_Status__c":"Unread","tdc_tsw__Task_Created__c":false,"Name":"Incoming","tdc_tsw__Event_Created__c":false,"tdc_tsw__Message_Text_New__c":"Administrative","tdc_tsw__Created_Date__c":"2019-01-21T22:09:03.000Z","CreatedById":"0051H000009gxp8QAA","tdc_tsw__Is_Keyword_Based__c":false,"OwnerId":"0051H000009gxp8QAA","tdc_tsw__Related_Object_Id_URL__c":"_HL_ENCODED_https:// (97 more) ...","RecordTypeId":"0121H000001Ie7fQAC","tdc_tsw__Delivered_SMS__c":"_IM1_/resource/tdc_t (27 more) ...","tdc_tsw__Important__c":false,"tdc_tsw__Delivered__c":false,"tdc_tsw__Related_Object__c":"tdc_tsw__Message__c","IsDeleted":false,"tdc_tsw__Incoming_Status__c":"Not Read","tdc_tsw__isCaseCreated__c":false,"tdc_tsw__Message__c":"a173B000000sdzIQAQ","tdc_tsw__Related_Object_Id__c":"a173B000000sdzDQAQ","SystemModstamp":"2019-01-21T22:09:03.000Z","tdc_tsw__Sender_Name__c":"Incoming","tdc_tsw__isLeadCreated__c":false,"CreatedDate":"2019-01-21T22:09:03.000Z","Id":"a173B000000se1OQAQ","LastModifiedById":"0051H000009gxp8QAA","tdc_tsw__Delivery_Status__c":"Sent"}]|0x5a5a61dc
+17:09:03.651 (654774542)|STATEMENT_EXECUTE|[8]
+17:09:03.651 (654777781)|STATEMENT_EXECUTE|[9]
+17:09:03.651 (654867410)|HEAP_ALLOCATE|[9]|Bytes:4
+17:09:03.651 (655059501)|VARIABLE_SCOPE_BEGIN|[9]|template|tdc_tsw__Message_Template__c|true|false
+17:09:03.651 (655085673)|VARIABLE_ASSIGNMENT|[9]|template|{}|0x25b5d20c
+17:09:03.651 (655096517)|STATEMENT_EXECUTE|[10]
+17:09:03.651 (655192298)|HEAP_ALLOCATE|[10]|Bytes:18
+17:09:03.651 (655306544)|VARIABLE_ASSIGNMENT|[10]|this.Name|"a173B000000se1OQAQ"|0x25b5d20c
+17:09:03.651 (655317856)|STATEMENT_EXECUTE|[11]
+17:09:03.651 (655325006)|VARIABLE_SCOPE_BEGIN|[11]|authorized|Boolean|false|false
+17:09:03.651 (655340708)|HEAP_ALLOCATE|[11]|Bytes:5
+17:09:03.651 (655350733)|VARIABLE_ASSIGNMENT|[11]|authorized|false
+17:09:03.651 (655355832)|STATEMENT_EXECUTE|[12]
+17:09:03.651 (655361382)|VARIABLE_SCOPE_BEGIN|[12]|requestingNumber|String|false|false
+17:09:03.651 (655372124)|VARIABLE_ASSIGNMENT|[12]|requestingNumber|""
+17:09:03.651 (655376972)|STATEMENT_EXECUTE|[13]
+17:09:03.651 (655466912)|VARIABLE_ASSIGNMENT|[13]|requestingNumber|"+13038816946"
+17:09:03.651 (655476565)|STATEMENT_EXECUTE|[14]
+17:09:03.651 (655478360)|STATEMENT_EXECUTE|[15]
+17:09:03.651 (655560603)|HEAP_ALLOCATE|[15]|Bytes:11
+17:09:03.651 (655594724)|VARIABLE_ASSIGNMENT|[15]|requestingNumber|"13038816946"
+17:09:03.651 (655602083)|STATEMENT_EXECUTE|[16]
+17:09:03.651 (655673437)|HEAP_ALLOCATE|[16]|Bytes:10
+17:09:03.651 (655703735)|VARIABLE_ASSIGNMENT|[16]|requestingNumber|"3038816946"
+17:09:03.651 (655710794)|STATEMENT_EXECUTE|[19]
+17:09:03.651 (655715246)|HEAP_ALLOCATE|[19]|Bytes:144
+17:09:03.651 (655738785)|HEAP_ALLOCATE|[19]|Bytes:4
+17:09:03.651 (656140861)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT ID, SMS_Lookup_Access__c FROM Contact WHERE ((PhoneNumeric__c = :tmpVar1 OR MobileNumeric__c = :tmpVar2) AND SMS_Lookup_Access__c = TRUE)
+17:09:03.651 (660696916)|SOQL_EXECUTE_END|[19]|Rows:1
+17:09:03.651 (660728919)|HEAP_ALLOCATE|[19]|Bytes:8
+17:09:03.651 (660748161)|HEAP_ALLOCATE|[19]|Bytes:57
+17:09:03.651 (660835160)|HEAP_ALLOCATE|[19]|Bytes:8
+17:09:03.651 (660855389)|VARIABLE_SCOPE_BEGIN|[19]|requestingContacts|List<Contact>|true|false
+17:09:03.651 (660892198)|VARIABLE_ASSIGNMENT|[19]|requestingContacts|[{"Id":"0033B00000Q9yz1QAB","SMS_Lookup_Access__c":true}]|0x41feecf8
+17:09:03.651 (660972150)|STATEMENT_EXECUTE|[24]
+17:09:03.651 (660975625)|STATEMENT_EXECUTE|[25]
+17:09:03.651 (661088793)|HEAP_ALLOCATE|[25]|Bytes:16
+17:09:03.651 (661103236)|VARIABLE_SCOPE_BEGIN|[25]|inMessage|String|false|false
+17:09:03.651 (661118177)|VARIABLE_ASSIGNMENT|[25]|inMessage|"%Administrative%"
+17:09:03.651 (661124315)|STATEMENT_EXECUTE|[26]
+17:09:03.651 (661128171)|VARIABLE_SCOPE_BEGIN|[26]|outMessage|String|false|false
+17:09:03.651 (661137833)|VARIABLE_ASSIGNMENT|[26]|outMessage|""
+17:09:03.651 (661142963)|STATEMENT_EXECUTE|[27]
+17:09:03.651 (661145997)|VARIABLE_SCOPE_BEGIN|[27]|phoneWithPrefix|String|false|false
+17:09:03.651 (661155553)|VARIABLE_ASSIGNMENT|[27]|phoneWithPrefix|""
+17:09:03.651 (661160223)|STATEMENT_EXECUTE|[28]
+17:09:03.651 (661162995)|VARIABLE_SCOPE_BEGIN|[28]|phone|String|false|false
+17:09:03.651 (661171921)|VARIABLE_ASSIGNMENT|[28]|phone|""
+17:09:03.651 (661195353)|STATEMENT_EXECUTE|[29]
+17:09:03.651 (661197874)|STATEMENT_EXECUTE|[30]
+17:09:03.651 (661242691)|HEAP_ALLOCATE|[30]|Bytes:10
+17:09:03.651 (661269166)|VARIABLE_ASSIGNMENT|[30]|phone|"nistrative"
+17:09:03.651 (661275918)|STATEMENT_EXECUTE|[31]
+17:09:03.651 (661280203)|HEAP_ALLOCATE|[31]|Bytes:1
+17:09:03.651 (661344443)|HEAP_ALLOCATE|[31]|Bytes:10
+17:09:03.651 (661391623)|HEAP_ALLOCATE|[31]|Bytes:11
+17:09:03.651 (661409399)|VARIABLE_ASSIGNMENT|[31]|phoneWithPrefix|"1nistrative"
+17:09:03.651 (661415939)|STATEMENT_EXECUTE|[33]
+17:09:03.651 (661420451)|HEAP_ALLOCATE|[33]|Bytes:61
+17:09:03.651 (661438632)|HEAP_ALLOCATE|[33]|Bytes:4
+17:09:03.651 (661720245)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT Name, Sent_Us__c FROM Account WHERE Name LIKE :tmpVar1
+17:09:03.651 (670115076)|SOQL_EXECUTE_END|[33]|Rows:1
+17:09:03.651 (670161498)|HEAP_ALLOCATE|[33]|Bytes:8
+17:09:03.651 (670192450)|HEAP_ALLOCATE|[33]|Bytes:55
+17:09:03.651 (670308773)|HEAP_ALLOCATE|[33]|Bytes:8
+17:09:03.651 (670338278)|VARIABLE_SCOPE_BEGIN|[33]|accounts|List<Account>|true|false
+17:09:03.651 (670395203)|VARIABLE_ASSIGNMENT|[33]|accounts|[{"Name":"K&P Administrative","Id":"0013B00000XmNrpQAF"}]|0x2b0d6bbe
+17:09:03.651 (670669472)|HEAP_ALLOCATE|[36]|Bytes:5
+17:09:03.651 (670744912)|HEAP_ALLOCATE|[36]|Bytes:12
+17:09:03.651 (670783001)|VARIABLE_SCOPE_BEGIN|[36]|account|Account|true|false
+17:09:03.651 (670824810)|VARIABLE_ASSIGNMENT|[36]|account|{"Name":"K&P Administrative","Id":"0013B00000XmNrpQAF"}|0x4855a32c
+17:09:03.651 (670845417)|STATEMENT_EXECUTE|[36]
+17:09:03.651 (670849468)|STATEMENT_EXECUTE|[37]
+17:09:03.651 (670865693)|HEAP_ALLOCATE|[37]|Bytes:1
+17:09:03.651 (670884153)|VARIABLE_SCOPE_BEGIN|[37]|sentUs|String|false|false
+17:09:03.651 (670913193)|VARIABLE_ASSIGNMENT|[37]|sentUs|"0"
+17:09:03.651 (670926161)|STATEMENT_EXECUTE|[38]
+17:09:03.651 (670933510)|HEAP_ALLOCATE|[38]|Bytes:14
+17:09:03.651 (670991981)|HEAP_ALLOCATE|[38]|Bytes:10
+17:09:03.651 (671056158)|HEAP_ALLOCATE|[38]|Bytes:43
+17:09:03.651 (671090350)|VARIABLE_ASSIGNMENT|[38]|outMessage|"Account\nName: K&P Ad (23 more) ..."
+17:09:03.651 (671108758)|STATEMENT_EXECUTE|[39]
+17:09:03.651 (671116186)|HEAP_ALLOCATE|[39]|Bytes:123
+17:09:03.651 (671174738)|HEAP_ALLOCATE|[39]|Bytes:4
+17:09:03.651 (671699850)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT ID, Phone, MobilePhone, Name, Email, AccountId FROM Contact WHERE AccountId = :tmpVar1 ORDER BY Name ASC NULLS FIRST
+17:09:03.651 (683714418)|SOQL_EXECUTE_END|[39]|Rows:3
+17:09:03.651 (683751076)|HEAP_ALLOCATE|[39]|Bytes:16
+17:09:03.651 (683786572)|HEAP_ALLOCATE|[39]|Bytes:443
+17:09:03.651 (683825174)|HEAP_ALLOCATE|[39]|Bytes:16
+17:09:03.651 (683844317)|VARIABLE_SCOPE_BEGIN|[39]|contacts|List<Contact>|true|false
+17:09:03.651 (683903322)|VARIABLE_ASSIGNMENT|[39]|contacts|[{"Id":"0033B00000Q9yz1QAB","Phone":"3038816946","MobilePhone":"3038816946","Name":"Chanida Clarkston","Email":"chanida@solvedbysoft (10 more) ...","AccountId":"0013B00000XmNrpQAF"},{"Id":"0033B00000Q9yyhQAB","MobilePhone":"8134041188","Name":"Harvey Webster","Email":"hwebster@kpattorney. (3 more) ...","AccountId":"0013B00000XmNrpQAF"},{"Id":"0033B00000Q9yySQAR","MobilePhone":"9548018100","Name":"Russell Adler","Email":"radler@kpattorney.co (1 more) ...","AccountId":"0013B00000XmNrpQAF"}]|0x24d1c22f
+17:09:03.651 (684080117)|HEAP_ALLOCATE|[43]|Bytes:5
+17:09:03.651 (684124924)|HEAP_ALLOCATE|[43]|Bytes:28
+17:09:03.651 (684143535)|VARIABLE_SCOPE_BEGIN|[43]|contact|Contact|true|false
+17:09:03.651 (684187763)|VARIABLE_ASSIGNMENT|[43]|contact|{"Id":"0033B00000Q9yz1QAB","Phone":"3038816946","MobilePhone":"3038816946","Name":"Chanida Clarkston","Email":"chanida@solvedbysoft (10 more) ...","AccountId":"0013B00000XmNrpQAF"}|0x7c402187
+17:09:03.651 (684202286)|STATEMENT_EXECUTE|[43]
+17:09:03.651 (684204585)|STATEMENT_EXECUTE|[44]
+17:09:03.651 (684248190)|VARIABLE_SCOPE_BEGIN|[44]|cPhone|String|false|false
+17:09:03.651 (684264776)|VARIABLE_ASSIGNMENT|[44]|cPhone|"3038816946"
+17:09:03.651 (684270262)|STATEMENT_EXECUTE|[45]
+17:09:03.651 (684293608)|VARIABLE_SCOPE_BEGIN|[45]|cMobilePhone|String|false|false
+17:09:03.651 (684308455)|VARIABLE_ASSIGNMENT|[45]|cMobilePhone|"3038816946"
+17:09:03.651 (684313944)|STATEMENT_EXECUTE|[46]
+17:09:03.651 (684319129)|HEAP_ALLOCATE|[46]|Bytes:7
+17:09:03.651 (684346415)|HEAP_ALLOCATE|[46]|Bytes:8
+17:09:03.651 (684355495)|HEAP_ALLOCATE|[46]|Bytes:9
+17:09:03.651 (684372388)|HEAP_ALLOCATE|[46]|Bytes:61
+17:09:03.651 (684379533)|HEAP_ALLOCATE|[46]|Bytes:8
+17:09:03.651 (684406498)|HEAP_ALLOCATE|[46]|Bytes:38
+17:09:03.651 (684416553)|HEAP_ALLOCATE|[46]|Bytes:99
+17:09:03.651 (684423924)|HEAP_ALLOCATE|[46]|Bytes:142
+17:09:03.651 (684438268)|VARIABLE_ASSIGNMENT|[46]|outMessage|"Account\nName: K&P Ad (122 more) ..."
+17:09:03.651 (684458757)|HEAP_ALLOCATE|[43]|Bytes:5
+17:09:03.651 (684478277)|HEAP_ALLOCATE|[43]|Bytes:24
+17:09:03.651 (684489565)|VARIABLE_SCOPE_BEGIN|[43]|contact|Contact|true|false
+17:09:03.651 (684514088)|VARIABLE_ASSIGNMENT|[43]|contact|{"Id":"0033B00000Q9yyhQAB","MobilePhone":"8134041188","Name":"Harvey Webster","Email":"hwebster@kpattorney. (3 more) ...","AccountId":"0013B00000XmNrpQAF"}|0x1f739741
+17:09:03.651 (684523045)|STATEMENT_EXECUTE|[43]
+17:09:03.651 (684524917)|STATEMENT_EXECUTE|[44]
+17:09:03.651 (684535012)|VARIABLE_SCOPE_BEGIN|[44]|cPhone|String|false|false
+17:09:03.651 (684546530)|VARIABLE_ASSIGNMENT|[44]|cPhone|""
+17:09:03.651 (684551840)|STATEMENT_EXECUTE|[45]
+17:09:03.651 (684560582)|VARIABLE_SCOPE_BEGIN|[45]|cMobilePhone|String|false|false
+17:09:03.651 (684572191)|VARIABLE_ASSIGNMENT|[45]|cMobilePhone|"8134041188"
+17:09:03.651 (684577048)|STATEMENT_EXECUTE|[46]
+17:09:03.651 (684587601)|HEAP_ALLOCATE|[46]|Bytes:48
+17:09:03.651 (684599969)|HEAP_ALLOCATE|[46]|Bytes:31
+17:09:03.651 (684606970)|HEAP_ALLOCATE|[46]|Bytes:79
+17:09:03.651 (684613125)|HEAP_ALLOCATE|[46]|Bytes:221
+17:09:03.651 (684624951)|VARIABLE_ASSIGNMENT|[46]|outMessage|"Account\nName: K&P Ad (201 more) ..."
+17:09:03.651 (684643644)|HEAP_ALLOCATE|[43]|Bytes:5
+17:09:03.651 (684666432)|HEAP_ALLOCATE|[43]|Bytes:24
+17:09:03.651 (684678375)|VARIABLE_SCOPE_BEGIN|[43]|contact|Contact|true|false
+17:09:03.651 (684704014)|VARIABLE_ASSIGNMENT|[43]|contact|{"Id":"0033B00000Q9yySQAR","MobilePhone":"9548018100","Name":"Russell Adler","Email":"radler@kpattorney.co (1 more) ...","AccountId":"0013B00000XmNrpQAF"}|0x4bcc1f8e
+17:09:03.651 (684712583)|STATEMENT_EXECUTE|[43]
+17:09:03.651 (684714347)|STATEMENT_EXECUTE|[44]
+17:09:03.651 (684723573)|VARIABLE_SCOPE_BEGIN|[44]|cPhone|String|false|false
+17:09:03.651 (684734370)|VARIABLE_ASSIGNMENT|[44]|cPhone|""
+17:09:03.651 (684739451)|STATEMENT_EXECUTE|[45]
+17:09:03.651 (684747460)|VARIABLE_SCOPE_BEGIN|[45]|cMobilePhone|String|false|false
+17:09:03.651 (684758449)|VARIABLE_ASSIGNMENT|[45]|cMobilePhone|"9548018100"
+17:09:03.651 (684771716)|STATEMENT_EXECUTE|[46]
+17:09:03.651 (684784183)|HEAP_ALLOCATE|[46]|Bytes:47
+17:09:03.651 (684796948)|HEAP_ALLOCATE|[46]|Bytes:29
+17:09:03.651 (684804079)|HEAP_ALLOCATE|[46]|Bytes:76
+17:09:03.651 (684810203)|HEAP_ALLOCATE|[46]|Bytes:297
+17:09:03.651 (684822745)|VARIABLE_ASSIGNMENT|[46]|outMessage|"Account\nName: K&P Ad (277 more) ..."
+17:09:03.651 (684840362)|HEAP_ALLOCATE|[43]|Bytes:5
+17:09:03.651 (684857985)|VARIABLE_ASSIGNMENT|[43]|contact|null|
+17:09:03.651 (684874431)|HEAP_ALLOCATE|[36]|Bytes:5
+17:09:03.651 (684890119)|VARIABLE_ASSIGNMENT|[36]|account|null|
+17:09:03.651 (684896572)|STATEMENT_EXECUTE|[50]
+17:09:03.651 (684900887)|HEAP_ALLOCATE|[50]|Bytes:215
+17:09:03.651 (684923028)|HEAP_ALLOCATE|[50]|Bytes:4
+17:09:03.651 (684951651)|HEAP_ALLOCATE|[50]|Bytes:7
+17:09:03.651 (684962232)|HEAP_ALLOCATE|[50]|Bytes:7
+17:09:03.651 (684971538)|HEAP_ALLOCATE|[50]|Bytes:7
+17:09:03.651 (685442667)|SOQL_EXECUTE_BEGIN|[50]|Aggregations:0|SELECT ID, Phone, MobilePhone, Name, Email, AccountId FROM Contact WHERE (PhoneNumeric__c = :tmpVar1 OR MobileNumeric__c = :tmpVar2 OR PhoneNumeric__c = :tmpVar3 OR MobileNumeric__c = :tmpVar4 OR Name LIKE :tmpVar5)
+17:09:03.651 (702009016)|SOQL_EXECUTE_END|[50]|Rows:0
+17:09:03.651 (702070883)|HEAP_ALLOCATE|[50]|Bytes:4
+17:09:03.651 (702094879)|HEAP_ALLOCATE|[50]|Bytes:0
+17:09:03.651 (702247241)|HEAP_ALLOCATE|[50]|Bytes:4
+17:09:03.651 (702282354)|VARIABLE_SCOPE_BEGIN|[50]|contacts|List<Contact>|true|false
+17:09:03.651 (702318776)|VARIABLE_ASSIGNMENT|[50]|contacts|[]|0x3736f5a
+17:09:03.651 (702414529)|STATEMENT_EXECUTE|[55]
+17:09:03.651 (702504764)|STATEMENT_EXECUTE|[71]
+17:09:03.651 (702508588)|STATEMENT_EXECUTE|[72]
+17:09:03.651 (702517320)|HEAP_ALLOCATE|[72]|Bytes:1
+17:09:03.651 (702536922)|HEAP_ALLOCATE|[72]|Bytes:298
+17:09:03.651 (702560461)|VARIABLE_ASSIGNMENT|[72]|outMessage|"Account\nName: K&P Ad (278 more) ..."
+17:09:03.651 (702568321)|STATEMENT_EXECUTE|[74]
+17:09:03.651 (702574265)|HEAP_ALLOCATE|[74]|Bytes:201
+17:09:03.651 (702601913)|HEAP_ALLOCATE|[74]|Bytes:4
+17:09:03.651 (703266265)|SOQL_EXECUTE_BEGIN|[74]|Aggregations:0|SELECT ID, Phone, MobilePhone, Name, Email FROM Lead WHERE (PhoneNumeric__c = :tmpVar1 OR MobileNumeric__c = :tmpVar2 OR PhoneNumeric__c = :tmpVar3 OR MobileNumeric__c = :tmpVar4 OR Name LIKE :tmpVar5)
+17:09:03.651 (721738595)|SOQL_EXECUTE_END|[74]|Rows:0
+17:09:03.651 (721808238)|HEAP_ALLOCATE|[74]|Bytes:4
+17:09:03.651 (721837099)|HEAP_ALLOCATE|[74]|Bytes:0
+17:09:03.651 (721979625)|HEAP_ALLOCATE|[74]|Bytes:4
+17:09:03.651 (722017488)|VARIABLE_SCOPE_BEGIN|[74]|leads|List<Lead>|true|false
+17:09:03.651 (722058961)|VARIABLE_ASSIGNMENT|[74]|leads|[]|0x36d0c974
+17:09:03.651 (722189981)|STATEMENT_EXECUTE|[79]
+17:09:03.651 (722266721)|STATEMENT_EXECUTE|[86]
+17:09:03.651 (722270708)|STATEMENT_EXECUTE|[87]
+17:09:03.651 (722489017)|VARIABLE_ASSIGNMENT|[87]|this.tdc_tsw__SMSBodyNew__c|"Account\nName: K&P Ad (278 more) ..."|0x25b5d20c
+17:09:03.651 (722501388)|STATEMENT_EXECUTE|[92]
+17:09:03.651 (722541975)|HEAP_ALLOCATE|[92]|Bytes:8
+17:09:03.651 (722552638)|DML_BEGIN|[92]|Op:Insert|Type:tdc_tsw__Message_Template__c|Rows:1
+17:09:03.651 (722591483)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:09:03.651 (1121525142)|DML_END|[92]
+17:09:03.651 (1121570641)|STATEMENT_EXECUTE|[93]
+17:09:03.651 (1121587335)|HEAP_ALLOCATE|[93]|Bytes:71
+17:09:03.651 (1121649234)|HEAP_ALLOCATE|[93]|Bytes:4
+17:09:03.651 (1123197480)|SOQL_EXECUTE_BEGIN|[93]|Aggregations:0|SELECT ResponseTemplate__c FROM tdc_tsw__Message__c WHERE ID = :tmpVar1
+17:09:03.651 (1141443322)|SOQL_EXECUTE_END|[93]|Rows:1
+17:09:03.651 (1141537859)|HEAP_ALLOCATE|[93]|Bytes:8
+17:09:03.651 (1141581565)|HEAP_ALLOCATE|[93]|Bytes:29
+17:09:03.651 (1141663896)|HEAP_ALLOCATE|[93]|Bytes:8
+17:09:03.651 (1141728654)|HEAP_ALLOCATE|[93]|Bytes:8
+17:09:03.651 (1141781301)|VARIABLE_SCOPE_BEGIN|[93]|updateSMS|tdc_tsw__Message__c|true|false
+17:09:03.651 (1141850532)|VARIABLE_ASSIGNMENT|[93]|updateSMS|{"Id":"a173B000000se1OQAQ"}|0x20efb55b
+17:09:03.651 (1141872786)|STATEMENT_EXECUTE|[97]
+17:09:03.651 (1142004021)|HEAP_ALLOCATE|[97]|Bytes:18
+17:09:03.651 (1142249725)|HEAP_ALLOCATE|[97]|Bytes:-4
+17:09:03.651 (1142278624)|VARIABLE_ASSIGNMENT|[97]|this.ResponseTemplate__c|"a153B000000pOXPQA2"|0x20efb55b
+17:09:03.651 (1142302653)|STATEMENT_EXECUTE|[98]
+17:09:03.651 (1142413526)|HEAP_ALLOCATE|[98]|Bytes:8
+17:09:03.651 (1142430703)|DML_BEGIN|[98]|Op:Update|Type:tdc_tsw__Message__c|Rows:1
+17:09:03.651 (1142521770)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:09:03.651 (1214589023)|DML_END|[98]
+17:09:04.214 (1214637755)|CUMULATIVE_LIMIT_USAGE
+17:09:04.214 (1214637755)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 340 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:04.214 (1214637755)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 14 out of 100
+  Number of query rows: 20 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:04.214 (1214637755)|CUMULATIVE_LIMIT_USAGE_END
+
+17:09:03.651 (1214724778)|CODE_UNIT_FINISHED|PhoneMatcher.MatchContactOnPhoneNunber(List<tdc_tsw__Message__c>)
+17:09:03.651 (1214769184)|POP_TRACE_FLAGS|[EXTERNAL]|01p3B000001izES|PhoneMatcher|APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:09:04.221 (1221499732)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.221 (1221668406)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.221 (1223443200)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.221 (1223714850)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.221 (1224222587)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.221 (1229800031)|SOQL_EXECUTE_BEGIN|[420]|Aggregations:0|SELECT SMSBodyNew__c FROM Message_Template__c WHERE id = :tmpVar1
+17:09:04.221 (1235868533)|SOQL_EXECUTE_END|[420]|Rows:1
+17:09:04.221 (1236316721)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.221 (1268218407)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.221 (1270074431)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.321 (1321093855)|CODE_UNIT_STARTED|[EXTERNAL]|01p3B000001jPFH|SMSTemplateCleanUp.RemoveSMSTemplate(List<tdc_tsw__Message__c>)
+17:09:04.321 (1321155203)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:09:04.321 (1321255966)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+17:09:04.321 (1321294063)|METHOD_ENTRY|[5]|01p3B000001jPFH|SMSTemplateCleanUp.SMSTemplateCleanUp()
+17:09:04.321 (1321312150)|STATEMENT_EXECUTE|[5]
+17:09:04.321 (1321321909)|STATEMENT_EXECUTE|[5]
+17:09:04.321 (1321334194)|METHOD_EXIT|[5]|SMSTemplateCleanUp
+17:09:04.321 (1321389102)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:09:04.321 (1321411965)|VARIABLE_SCOPE_BEGIN|[7]|messages|List<tdc_tsw__Message__c>|true|false
+17:09:04.321 (1325414381)|VARIABLE_ASSIGNMENT|[7]|messages|[{"LastModifiedDate":"2019-01-21T22:09:03.000Z","tdc_tsw__ToNumber__c":"+17065037067","tdc_tsw__Sender_Number__c":"+13038816946","tdc_tsw__Read__c":false,"tdc_tsw__Read_Status__c":"Unread","tdc_tsw__Task_Created__c":false,"Name":"Incoming","tdc_tsw__Event_Created__c":false,"tdc_tsw__Message_Text_New__c":"Administrative","tdc_tsw__Created_Date__c":"2019-01-21T22:09:03.000Z","CreatedById":"0051H000009gxp8QAA","tdc_tsw__Is_Keyword_Based__c":false,"OwnerId":"0051H000009gxp8QAA","tdc_tsw__Related_Object_Id_URL__c":"_HL_ENCODED_https:// (97 more) ...","RecordTypeId":"0121H000001Ie7fQAC","tdc_tsw__Delivered_SMS__c":"_IM1_/resource/tdc_t (27 more) ...","tdc_tsw__Important__c":false,"tdc_tsw__Delivered__c":false,"tdc_tsw__Related_Object__c":"tdc_tsw__Message__c","IsDeleted":false,"tdc_tsw__Incoming_Status__c":"Not Read","tdc_tsw__isCaseCreated__c":false,"tdc_tsw__Message__c":"a173B000000sdzIQAQ","tdc_tsw__Related_Object_Id__c":"a173B000000sdzDQAQ","ResponseTemplate__c":"a153B000000pOXPQA2","SystemModstamp":"2019-01-21T22:09:03.000Z","tdc_tsw__Sender_Name__c":"Incoming","tdc_tsw__isLeadCreated__c":false,"CreatedDate":"2019-01-21T22:09:03.000Z","Id":"a173B000000se1OQAQ","LastModifiedById":"0051H000009gxp8QAA","tdc_tsw__Delivery_Status__c":"Sent"}]|0xe87aa7c
+17:09:04.321 (1325481749)|STATEMENT_EXECUTE|[7]
+17:09:04.321 (1325486673)|STATEMENT_EXECUTE|[8]
+17:09:04.321 (1325496485)|HEAP_ALLOCATE|[8]|Bytes:71
+17:09:04.321 (1325538476)|HEAP_ALLOCATE|[8]|Bytes:4
+17:09:04.321 (1326819174)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT ID FROM tdc_tsw__Message_Template__c WHERE ID = :tmpVar1 LIMIT 1
+17:09:04.321 (1331207352)|SOQL_EXECUTE_END|[8]|Rows:1
+17:09:04.321 (1331254923)|HEAP_ALLOCATE|[8]|Bytes:8
+17:09:04.321 (1331288323)|HEAP_ALLOCATE|[8]|Bytes:29
+17:09:04.321 (1331345309)|HEAP_ALLOCATE|[8]|Bytes:8
+17:09:04.321 (1331371906)|HEAP_ALLOCATE|[8]|Bytes:54
+17:09:04.321 (1331412640)|HEAP_ALLOCATE|[8]|Bytes:8
+17:09:04.321 (1331438451)|VARIABLE_SCOPE_BEGIN|[8]|template|tdc_tsw__Message_Template__c|true|false
+17:09:04.321 (1331482822)|VARIABLE_ASSIGNMENT|[8]|template|{"Id":"a153B000000pOXPQA2"}|0x4b6e3a0a
+17:09:04.321 (1331503370)|STATEMENT_EXECUTE|[12]
+17:09:04.321 (1331611036)|HEAP_ALLOCATE|[12]|Bytes:8
+17:09:04.321 (1331642940)|HEAP_ALLOCATE|[12]|Bytes:8
+17:09:04.321 (1331666171)|DML_BEGIN|[12]|Op:Delete|Type:tdc_tsw__Message_Template__c|Rows:1
+17:09:04.321 (1331735246)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:09:04.321 (1473067060)|DML_END|[12]
+17:09:04.473 (1473120676)|CUMULATIVE_LIMIT_USAGE
+17:09:04.473 (1473120676)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 7 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 414 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:04.473 (1473120676)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 15 out of 100
+  Number of query rows: 21 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:09:04.473 (1473120676)|CUMULATIVE_LIMIT_USAGE_END
+
+17:09:04.321 (1473203774)|CODE_UNIT_FINISHED|SMSTemplateCleanUp.RemoveSMSTemplate(List<tdc_tsw__Message__c>)
+17:09:04.743 (1743314866)|DML_END|[557]
+17:09:04.743 (1743567650)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1746320852)|SOQL_EXECUTE_BEGIN|[1091]|Aggregations:0|SELECT id, name, Brief_Description__c, Keywords__c, Active__c FROM Survey__c WHERE (Active__c = TRUE AND Keywords__c != NULL) LIMIT 999
+17:09:04.743 (1750432539)|SOQL_EXECUTE_END|[1091]|Rows:0
+17:09:04.743 (1754358709)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1754408389)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1754461075)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1755729221)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1755842486)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1755884794)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1755985470)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1756024532)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1757317589)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1758578977)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1758635172)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1758671393)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1758781149)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1758861746)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1758901664)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1758997249)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1760050490)|ENTERING_MANAGED_PKG|tdc_tsw
+17:09:04.743 (1761855519)|ENTERING_MANAGED_PKG|tdc_tsw

@@ -1,0 +1,17 @@
+44.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+23:39:43.0 (161741)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+23:39:43.0 (2374783)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (2523751)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (3000324)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (3041200)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (3897713)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (4594867)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (6061420)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (6138773)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (7285374)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (13008825)|SOQL_EXECUTE_BEGIN|[82]|Aggregations:0|SELECT CreatedDate, Id,Task_Created__c,Event_Created__c,isCaseCreated__c,Task_Id__c,Event_Id__c,Case__c, Important__c, Delivered__c, Message_Text_New__c, Name, Owner.Name, Read__c,MessageId__c, ToNumber__c, Related_Object_Id__c, Related_Object__c, Sender_Number__c, LastModifiedDate, Attachments_Ids__c FROM Message__c WHERE Contact__c =: recordId ORDER BY CreatedDate Desc limit 200
+23:39:43.0 (22205150)|SOQL_EXECUTE_END|[82]|Rows:0
+23:39:43.0 (25588647)|SOQL_EXECUTE_BEGIN|[172]|Aggregations:0|SELECT id, name FROM ChatTranscript__c WHERE (Chat_Active__c = TRUE AND (Related_Object_Id__c = :tmpVar1 OR Related_Object_Id__c = :tmpVar2)) LIMIT 1
+23:39:43.0 (28730212)|SOQL_EXECUTE_END|[172]|Rows:0
+23:39:43.0 (29072018)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:43.0 (29114315)|ENTERING_MANAGED_PKG|tdc_tsw

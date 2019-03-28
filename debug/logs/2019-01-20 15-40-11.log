@@ -1,0 +1,77 @@
+44.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:40:09.0 (128997)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+17:40:09.0 (1650087)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (2015879)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (5829208)|SOQL_EXECUTE_BEGIN|[16]|Aggregations:0|SELECT id, name, Disable_Incoming_SMS_Sharing__c FROM User WHERE id = :tmpVar1
+17:40:09.0 (13985652)|SOQL_EXECUTE_END|[16]|Rows:1
+17:40:09.0 (19847447)|SOQL_EXECUTE_BEGIN|[37]|Aggregations:0|SELECT CreatedDate,Created_Date__c,Id,LastModifiedDate,MessageId__c,Message_Text_New__c,Name,OwnerId,Read__c,Related_Object_Id__c,Related_Object__c,Sender_Number__c, Sender_Name__c,ToNumber__c,Attachments_Ids__c FROM Message__c WHERE Name = 'Incoming' AND Read__c = false ORDER BY CreatedDate Desc limit 100
+17:40:09.0 (30662294)|SOQL_EXECUTE_END|[37]|Rows:14
+17:40:09.0 (35000687)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (37072579)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (37595136)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (38511529)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (41948996)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (43150212)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (43493114)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (44036453)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (45630738)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (46452772)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (46533027)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (47178196)|SOQL_EXECUTE_BEGIN|[200]|Aggregations:0|SELECT Name, NamespacePrefix, SystemModStamp FROM StaticResource WHERE Name LIKE :tmpVar1 LIMIT 10
+17:40:09.0 (51397448)|SOQL_EXECUTE_END|[200]|Rows:1
+17:40:09.0 (52532976)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (53110659)|SOQL_EXECUTE_BEGIN|[200]|Aggregations:0|SELECT Name, NamespacePrefix, SystemModStamp FROM StaticResource WHERE Name LIKE :tmpVar1 LIMIT 10
+17:40:09.0 (56710941)|SOQL_EXECUTE_END|[200]|Rows:1
+17:40:09.0 (57311235)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (77005273)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (78814122)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (79162936)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (80152011)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.0 (80661756)|SOQL_EXECUTE_BEGIN|[200]|Aggregations:0|SELECT Name, NamespacePrefix, SystemModStamp FROM StaticResource WHERE Name LIKE :tmpVar1 LIMIT 10
+17:40:09.0 (83937613)|SOQL_EXECUTE_END|[200]|Rows:1
+17:40:09.100 (100870885)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+17:40:09.100 (102919904)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.100 (103200924)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:09.100 (106312245)|SOQL_EXECUTE_BEGIN|[355]|Aggregations:0|SELECT id, name, Disable_Incoming_SMS_Sharing__c FROM User WHERE id = :tmpVar1
+17:40:09.100 (116082566)|SOQL_EXECUTE_END|[355]|Rows:1
+17:40:09.100 (117526084)|SOQL_EXECUTE_BEGIN|[367]|Aggregations:0|SELECT CreatedDate,Id,LastModifiedDate,Related_Object_Id__c FROM Message__c WHERE Name = 'Incoming' AND Read__c = false ORDER BY CreatedDate Desc limit 100
+17:40:09.100 (124302035)|SOQL_EXECUTE_END|[367]|Rows:14
+17:40:09.130 (130255729)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+17:40:09.130 (131345563)|ENTERING_MANAGED_PKG|tdc_tsw
+10.29 (96910310)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:10.29 (124520829)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:10.29 (129750100)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:10.29 (129841315)|ENTERING_MANAGED_PKG|tdc_tsw
+17:40:10.29 (130796218)|SOQL_EXECUTE_BEGIN|[488]|Aggregations:0|select id,name,SMSBodyNew__c  from Message_Template__c where  SMS_Survey__c = null  and ObjectName__c =: selectedObject order by name ASC Limit 999
+17:40:10.29 (135958663)|SOQL_EXECUTE_END|[488]|Rows:0
+17:40:10.161 (161262960)|CUMULATIVE_LIMIT_USAGE
+17:40:10.161 (161262960)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:40:10.161 (161262960)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:40:10.161 (161262960)|CUMULATIVE_LIMIT_USAGE_END
+

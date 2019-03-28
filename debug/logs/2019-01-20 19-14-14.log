@@ -1,0 +1,132 @@
+38.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+21:14:13.20 (20556516)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (24151764)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (29167568)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (29262749)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (30130816)|SOQL_EXECUTE_BEGIN|[488]|Aggregations:0|select id,name,SMSBodyNew__c  from Message_Template__c where  SMS_Survey__c = null  and ObjectName__c =: selectedObject order by name ASC Limit 999
+21:14:13.20 (35331964)|SOQL_EXECUTE_END|[488]|Rows:1
+21:14:13.20 (39958183)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40028974)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40097219)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40150719)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40207614)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40263846)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40605239)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40661042)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40738803)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40812669)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40854749)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (40940032)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (41085134)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (41181643)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (41273947)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (41332658)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (41405470)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (41462855)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (41497887)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43591717)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43637386)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43709475)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43742467)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43792858)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43825841)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43852526)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (43880412)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (44065811)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (44140638)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (44188015)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (45550739)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (45610875)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (48297352)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (48355739)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (48407484)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (48466058)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (48536170)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (48877520)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (54523142)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (54575656)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (56806227)|SOQL_EXECUTE_BEGIN|[1402]|Aggregations:0|SELECT id, state, CronJobDetail.JobType, CronJobDetail.Name FROM CronTrigger WHERE (EndTime = NULL AND state = 'DELETED' AND CronJobDetail.Name LIKE '360 SMS %')
+21:14:13.20 (67354316)|SOQL_EXECUTE_END|[1402]|Rows:2
+21:14:13.20 (142385974)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (142459988)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (142544549)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (144103578)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (144177678)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (144299358)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (180328809)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (180401051)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (180462119)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (180596600)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (180690033)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (181096498)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (181188586)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (181314161)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (181346609)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (182768007)|DML_BEGIN|[1047]|Op:Insert|Type:tdc_tsw__Scheduled_Sms__c|Rows:1
+21:14:13.20 (221464732)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (222719057)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (223220548)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.20 (223295858)|ENTERING_MANAGED_PKG|tdc_tsw
+21:14:13.224 (224473750)|CUMULATIVE_LIMIT_USAGE
+21:14:13.224 (224473750)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:14:13.224 (224473750)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:14:13.224 (224473750)|CUMULATIVE_LIMIT_USAGE_END
+
+21:14:13.20 (228341026)|DML_END|[1047]
+21:14:13.267 (267486866)|CUMULATIVE_LIMIT_USAGE
+21:14:13.267 (267486866)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:14:13.267 (267486866)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:14:13.267 (267486866)|CUMULATIVE_LIMIT_USAGE_END
+

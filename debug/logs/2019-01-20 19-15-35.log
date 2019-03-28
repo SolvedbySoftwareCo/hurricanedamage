@@ -1,0 +1,464 @@
+44.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: tdc_tsw__Scheduled_Sms__c outSMS = new tdc_tsw__Scheduled_Sms__c();
+Execute Anonymous: outSMS.tdc_tsw__message_text__c = 'XXXXXX';
+Execute Anonymous: outSMS.tdc_tsw__object_name__c = 'User';
+Execute Anonymous: outSMS.tdc_tsw__phone_api__c = 'mobilephone';
+Execute Anonymous: 
+Execute Anonymous: outSMS.tdc_tsw__next_sms_send_date__c = datetime.now().addminutes(1);
+Execute Anonymous: insert outSMS;
+Execute Anonymous: 
+Execute Anonymous: //,  ,  tdc_tsw__opportunity__c,  tdc_tsw__phone_api__c,  tdc_tsw__related_object_id__c,  tdc_tsw__sms_template__c,  tdc_tsw__scheduled_jobid__c,  tdc_tsw__scheduled_time__c,  tdc_tsw__sender_number_key__c FROM tdc_tsw__Scheduled_Sms__c
+Execute Anonymous: /*
+Execute Anonymous: * @description: A code snippet that mimics the popular Select * SQL syntax in force.com's Apex language.
+Execute Anonymous: */
+Execute Anonymous: 
+Execute Anonymous: // Initialize setup variables
+Execute Anonymous: String objectName = 'tdc_tsw__Scheduled_Sms__c';  // modify as needed
+Execute Anonymous: String query = 'SELECT';
+Execute Anonymous: Map<String, Schema.SObjectField> objectFields = Schema.getGlobalDescribe().get(objectName).getDescribe().fields.getMap();
+Execute Anonymous: 
+Execute Anonymous: // Grab the fields from the describe method and append them to the queryString one by one.
+Execute Anonymous: for(String s : objectFields.keySet()) {
+Execute Anonymous:    query += ' ' + s + ', ';
+Execute Anonymous: }
+Execute Anonymous: 
+Execute Anonymous: // Manually add related object's fields that are needed.
+Execute Anonymous: query += 'Account.Name,'; // modify as needed
+Execute Anonymous: 
+Execute Anonymous: // Strip off the last comma if it exists.
+Execute Anonymous: if (query.subString(query.Length()-1,query.Length()) == ','){
+Execute Anonymous:     query = query.subString(0,query.Length()-1);
+Execute Anonymous: }
+Execute Anonymous: 
+Execute Anonymous: // Add FROM statement
+Execute Anonymous: query += ' FROM ' + objectName;
+Execute Anonymous: 
+Execute Anonymous: System.debug(query);
+Execute Anonymous: // Add on a WHERE/ORDER/LIMIT statement as needed
+Execute Anonymous: //query += ' WHERE firstName = \'test\''; // modify as needed
+Execute Anonymous:   
+21:15:34.1 (1975116)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:15:34.1 (2017150)|EXECUTION_STARTED
+21:15:34.1 (2023961)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+21:15:34.1 (2226699)|VARIABLE_SCOPE_BEGIN|[17]|objectFields|Map<String,Schema.SObjectField>|true|false
+21:15:34.1 (2279677)|VARIABLE_SCOPE_BEGIN|[15]|objectName|String|false|false
+21:15:34.1 (2414248)|VARIABLE_SCOPE_BEGIN|[1]|outSMS|tdc_tsw__Scheduled_Sms__c|true|false
+21:15:34.1 (2435465)|VARIABLE_SCOPE_BEGIN|[16]|query|String|false|false
+21:15:34.1 (2645162)|HEAP_ALLOCATE|[72]|Bytes:3
+21:15:34.1 (2717615)|HEAP_ALLOCATE|[77]|Bytes:152
+21:15:34.1 (2745910)|HEAP_ALLOCATE|[342]|Bytes:408
+21:15:34.1 (2775126)|HEAP_ALLOCATE|[355]|Bytes:408
+21:15:34.1 (2803530)|HEAP_ALLOCATE|[467]|Bytes:48
+21:15:34.1 (2843212)|HEAP_ALLOCATE|[139]|Bytes:6
+21:15:34.1 (2901306)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:41
+21:15:34.1 (3297932)|STATEMENT_EXECUTE|[1]
+21:15:34.1 (3303181)|STATEMENT_EXECUTE|[1]
+21:15:34.1 (3338245)|HEAP_ALLOCATE|[1]|Bytes:4
+21:15:34.1 (3540462)|VARIABLE_ASSIGNMENT|[1]|outSMS|{}|0x22449da7
+21:15:34.1 (3555894)|STATEMENT_EXECUTE|[2]
+21:15:34.1 (3561794)|HEAP_ALLOCATE|[2]|Bytes:6
+21:15:34.1 (3824910)|VARIABLE_ASSIGNMENT|[2]|this.tdc_tsw__Message_Text__c|"XXXXXX"|0x22449da7
+21:15:34.1 (3837564)|STATEMENT_EXECUTE|[3]
+21:15:34.1 (3843934)|HEAP_ALLOCATE|[3]|Bytes:4
+21:15:34.1 (3930911)|VARIABLE_ASSIGNMENT|[3]|this.tdc_tsw__Object_Name__c|"User"|0x22449da7
+21:15:34.1 (3944540)|STATEMENT_EXECUTE|[4]
+21:15:34.1 (3949353)|HEAP_ALLOCATE|[4]|Bytes:11
+21:15:34.1 (4073614)|VARIABLE_ASSIGNMENT|[4]|this.tdc_tsw__Phone_Api__c|"mobilephone"|0x22449da7
+21:15:34.1 (4095422)|STATEMENT_EXECUTE|[6]
+21:15:34.1 (4205541)|HEAP_ALLOCATE|[6]|Bytes:56
+21:15:34.1 (4252319)|HEAP_ALLOCATE|[6]|Bytes:56
+21:15:34.1 (4421664)|VARIABLE_ASSIGNMENT|[6]|this.tdc_tsw__Next_SMS_Send_Date__c|"2019-01-21T02:16:34.227Z"|0x22449da7
+21:15:34.1 (4436471)|STATEMENT_EXECUTE|[7]
+21:15:34.1 (4522124)|HEAP_ALLOCATE|[50]|Bytes:5
+21:15:34.1 (4570504)|HEAP_ALLOCATE|[56]|Bytes:5
+21:15:34.1 (4600876)|HEAP_ALLOCATE|[64]|Bytes:7
+21:15:34.1 (4691572)|HEAP_ALLOCATE|[7]|Bytes:8
+21:15:34.1 (4743738)|DML_BEGIN|[7]|Op:Insert|Type:tdc_tsw__Scheduled_Sms__c|Rows:1
+21:15:34.1 (4839752)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+21:15:34.62 (62508275)|ENTERING_MANAGED_PKG|tdc_tsw
+21:15:34.62 (64400984)|ENTERING_MANAGED_PKG|tdc_tsw
+21:15:34.62 (65033477)|ENTERING_MANAGED_PKG|tdc_tsw
+21:15:34.62 (65120736)|ENTERING_MANAGED_PKG|tdc_tsw
+21:15:34.62 (71349963)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT id FROM Scheduled_Sms__c WHERE id IN :tmpVar1
+21:15:34.62 (75294010)|SOQL_EXECUTE_END|[45]|Rows:1
+21:15:34.62 (75635328)|DML_BEGIN|[48]|Op:Delete|Type:tdc_tsw__Scheduled_Sms__c|Rows:1
+21:15:34.62 (206069083)|DML_END|[48]
+21:15:34.206 (206275429)|CUMULATIVE_LIMIT_USAGE
+21:15:34.206 (206275429)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:15:34.206 (206275429)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:15:34.206 (206275429)|CUMULATIVE_LIMIT_USAGE_END
+
+21:15:34.1 (209719479)|DML_END|[7]
+21:15:34.1 (209745510)|STATEMENT_EXECUTE|[15]
+21:15:34.1 (209786955)|VARIABLE_ASSIGNMENT|[15]|objectName|"tdc_tsw__Scheduled_S (5 more) ..."
+21:15:34.1 (209801495)|STATEMENT_EXECUTE|[16]
+21:15:34.1 (209808828)|HEAP_ALLOCATE|[16]|Bytes:6
+21:15:34.1 (209828636)|VARIABLE_ASSIGNMENT|[16]|query|"SELECT"
+21:15:34.1 (209836684)|STATEMENT_EXECUTE|[17]
+21:15:34.1 (286869659)|HEAP_ALLOCATE|[17]|Bytes:2240
+21:15:34.1 (303642755)|HEAP_ALLOCATE|[17]|Bytes:4
+21:15:34.1 (304301221)|HEAP_ALLOCATE|[17]|Bytes:144
+21:15:34.1 (304754324)|VARIABLE_ASSIGNMENT|[17]|objectFields|"{createdbyid=CreatedById, createddate=CreatedDate, id=Id, isdeleted=IsDeleted, lastmodifiedbyid=LastModifiedById, lastmodifieddate=LastModifiedDate, lastreferenceddate=LastReferencedDate, lastvieweddate=LastViewedDate, name=Name, ownerid=OwnerId, ...}"|0x9a3ba16
+21:15:34.1 (304793756)|HEAP_ALLOCATE|[20]|Bytes:4
+21:15:34.1 (304916734)|HEAP_ALLOCATE|[20]|Bytes:838
+21:15:34.1 (304959558)|HEAP_ALLOCATE|[20]|Bytes:140
+21:15:34.1 (304999332)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305024916)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305049286)|VARIABLE_ASSIGNMENT|[20]|s|"id"
+21:15:34.1 (305067633)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305070219)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305080808)|HEAP_ALLOCATE|[21]|Bytes:1
+21:15:34.1 (305088738)|HEAP_ALLOCATE|[21]|Bytes:2
+21:15:34.1 (305108634)|HEAP_ALLOCATE|[21]|Bytes:5
+21:15:34.1 (305122946)|HEAP_ALLOCATE|[21]|Bytes:11
+21:15:34.1 (305140661)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id, "
+21:15:34.1 (305161270)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305181532)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305200487)|VARIABLE_ASSIGNMENT|[20]|s|"ownerid"
+21:15:34.1 (305208018)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305209923)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305217494)|HEAP_ALLOCATE|[21]|Bytes:10
+21:15:34.1 (305227547)|HEAP_ALLOCATE|[21]|Bytes:21
+21:15:34.1 (305243820)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (1 more) ..."
+21:15:34.1 (305263912)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305280476)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305299640)|VARIABLE_ASSIGNMENT|[20]|s|"isdeleted"
+21:15:34.1 (305307396)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305309170)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305316551)|HEAP_ALLOCATE|[21]|Bytes:12
+21:15:34.1 (305326251)|HEAP_ALLOCATE|[21]|Bytes:33
+21:15:34.1 (305341698)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (13 more) ..."
+21:15:34.1 (305361219)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305377860)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305396690)|VARIABLE_ASSIGNMENT|[20]|s|"name"
+21:15:34.1 (305404414)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305406246)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305415286)|HEAP_ALLOCATE|[21]|Bytes:7
+21:15:34.1 (305423151)|HEAP_ALLOCATE|[21]|Bytes:40
+21:15:34.1 (305440012)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (20 more) ..."
+21:15:34.1 (305457486)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305475732)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305492260)|VARIABLE_ASSIGNMENT|[20]|s|"createddate"
+21:15:34.1 (305499873)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305501749)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305510298)|HEAP_ALLOCATE|[21]|Bytes:14
+21:15:34.1 (305519472)|HEAP_ALLOCATE|[21]|Bytes:54
+21:15:34.1 (305534642)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (34 more) ..."
+21:15:34.1 (305552233)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305570071)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305586312)|VARIABLE_ASSIGNMENT|[20]|s|"createdbyid"
+21:15:34.1 (305593546)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305597021)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305604212)|HEAP_ALLOCATE|[21]|Bytes:14
+21:15:34.1 (305613681)|HEAP_ALLOCATE|[21]|Bytes:68
+21:15:34.1 (305628717)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (48 more) ..."
+21:15:34.1 (305646747)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305665354)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305683386)|VARIABLE_ASSIGNMENT|[20]|s|"lastmodifieddate"
+21:15:34.1 (305690909)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305692672)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305699559)|HEAP_ALLOCATE|[21]|Bytes:19
+21:15:34.1 (305709421)|HEAP_ALLOCATE|[21]|Bytes:87
+21:15:34.1 (305724744)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (67 more) ..."
+21:15:34.1 (305744221)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305760772)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305780954)|VARIABLE_ASSIGNMENT|[20]|s|"lastmodifiedbyid"
+21:15:34.1 (305787754)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305789614)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305796503)|HEAP_ALLOCATE|[21]|Bytes:19
+21:15:34.1 (305806517)|HEAP_ALLOCATE|[21]|Bytes:106
+21:15:34.1 (305824077)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (86 more) ..."
+21:15:34.1 (305841659)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305860021)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305876665)|VARIABLE_ASSIGNMENT|[20]|s|"systemmodstamp"
+21:15:34.1 (305884009)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305885769)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305894421)|HEAP_ALLOCATE|[21]|Bytes:17
+21:15:34.1 (305902318)|HEAP_ALLOCATE|[21]|Bytes:123
+21:15:34.1 (305918988)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (103 more) ..."
+21:15:34.1 (305936552)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (305954713)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (305971861)|VARIABLE_ASSIGNMENT|[20]|s|"lastvieweddate"
+21:15:34.1 (305979291)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (305982494)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (305989503)|HEAP_ALLOCATE|[21]|Bytes:17
+21:15:34.1 (305998497)|HEAP_ALLOCATE|[21]|Bytes:140
+21:15:34.1 (306013898)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (120 more) ..."
+21:15:34.1 (306034840)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306057887)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306077892)|VARIABLE_ASSIGNMENT|[20]|s|"lastreferenceddate"
+21:15:34.1 (306085284)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306087126)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306094340)|HEAP_ALLOCATE|[21]|Bytes:21
+21:15:34.1 (306104556)|HEAP_ALLOCATE|[21]|Bytes:161
+21:15:34.1 (306120467)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (141 more) ..."
+21:15:34.1 (306141216)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306157960)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306177842)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__account__c"
+21:15:34.1 (306185150)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306186885)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306195140)|HEAP_ALLOCATE|[21]|Bytes:22
+21:15:34.1 (306203093)|HEAP_ALLOCATE|[21]|Bytes:183
+21:15:34.1 (306219643)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (163 more) ..."
+21:15:34.1 (306238151)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306256367)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306275857)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__additional_ (12 more) ..."
+21:15:34.1 (306284579)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306286395)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306293292)|HEAP_ALLOCATE|[21]|Bytes:35
+21:15:34.1 (306303103)|HEAP_ALLOCATE|[21]|Bytes:218
+21:15:34.1 (306317787)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (198 more) ..."
+21:15:34.1 (306336607)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306352924)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306373217)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__campaignmem (11 more) ..."
+21:15:34.1 (306380661)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306382429)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306390724)|HEAP_ALLOCATE|[21]|Bytes:34
+21:15:34.1 (306399947)|HEAP_ALLOCATE|[21]|Bytes:252
+21:15:34.1 (306415038)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (232 more) ..."
+21:15:34.1 (306432471)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306450921)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306467822)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__campaign__c"
+21:15:34.1 (306476740)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306478570)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306485632)|HEAP_ALLOCATE|[21]|Bytes:23
+21:15:34.1 (306495215)|HEAP_ALLOCATE|[21]|Bytes:275
+21:15:34.1 (306509983)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (255 more) ..."
+21:15:34.1 (306529001)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306545386)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306563936)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__contact__c"
+21:15:34.1 (306570882)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306572615)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306579533)|HEAP_ALLOCATE|[21]|Bytes:22
+21:15:34.1 (306589156)|HEAP_ALLOCATE|[21]|Bytes:297
+21:15:34.1 (306606029)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (277 more) ..."
+21:15:34.1 (306623445)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306641093)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306657946)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__end_date__c"
+21:15:34.1 (306666327)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306668498)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306675649)|HEAP_ALLOCATE|[21]|Bytes:23
+21:15:34.1 (306685175)|HEAP_ALLOCATE|[21]|Bytes:320
+21:15:34.1 (306699877)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (300 more) ..."
+21:15:34.1 (306719042)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306736078)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306756651)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__iseveryday_ (2 more) ..."
+21:15:34.1 (306763978)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306765750)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306772839)|HEAP_ALLOCATE|[21]|Bytes:25
+21:15:34.1 (306782475)|HEAP_ALLOCATE|[21]|Bytes:345
+21:15:34.1 (306800170)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (325 more) ..."
+21:15:34.1 (306817999)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306835489)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306853916)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__iseverymont (4 more) ..."
+21:15:34.1 (306862707)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306864769)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306871670)|HEAP_ALLOCATE|[21]|Bytes:27
+21:15:34.1 (306881290)|HEAP_ALLOCATE|[21]|Bytes:372
+21:15:34.1 (306896576)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (352 more) ..."
+21:15:34.1 (306915859)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (306933671)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (306951799)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__last_sms_se (10 more) ..."
+21:15:34.1 (306959240)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (306961096)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (306969626)|HEAP_ALLOCATE|[21]|Bytes:33
+21:15:34.1 (306978610)|HEAP_ALLOCATE|[21]|Bytes:405
+21:15:34.1 (306993642)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (385 more) ..."
+21:15:34.1 (307011355)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307031025)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307048069)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__lead__c"
+21:15:34.1 (307062302)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307064409)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307071882)|HEAP_ALLOCATE|[21]|Bytes:19
+21:15:34.1 (307081975)|HEAP_ALLOCATE|[21]|Bytes:424
+21:15:34.1 (307099163)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (404 more) ..."
+21:15:34.1 (307117414)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307135512)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307153614)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__message_tex (4 more) ..."
+21:15:34.1 (307161119)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307164359)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307171451)|HEAP_ALLOCATE|[21]|Bytes:27
+21:15:34.1 (307181082)|HEAP_ALLOCATE|[21]|Bytes:451
+21:15:34.1 (307195777)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (431 more) ..."
+21:15:34.1 (307213044)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307231219)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307250546)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__next_sms_se (10 more) ..."
+21:15:34.1 (307257924)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307259958)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307268385)|HEAP_ALLOCATE|[21]|Bytes:33
+21:15:34.1 (307277330)|HEAP_ALLOCATE|[21]|Bytes:484
+21:15:34.1 (307292171)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (464 more) ..."
+21:15:34.1 (307310142)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307328348)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307352136)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__object_name (3 more) ..."
+21:15:34.1 (307361398)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307363511)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307370798)|HEAP_ALLOCATE|[21]|Bytes:26
+21:15:34.1 (307380269)|HEAP_ALLOCATE|[21]|Bytes:510
+21:15:34.1 (307395450)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (490 more) ..."
+21:15:34.1 (307414876)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307431407)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307451106)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__opportunity (3 more) ..."
+21:15:34.1 (307459116)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307460916)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307469934)|HEAP_ALLOCATE|[21]|Bytes:26
+21:15:34.1 (307479651)|HEAP_ALLOCATE|[21]|Bytes:536
+21:15:34.1 (307494670)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (516 more) ..."
+21:15:34.1 (307514034)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307530620)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307551335)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__phone_api__ (1 more) ..."
+21:15:34.1 (307558704)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307560421)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307569030)|HEAP_ALLOCATE|[21]|Bytes:24
+21:15:34.1 (307578453)|HEAP_ALLOCATE|[21]|Bytes:560
+21:15:34.1 (307593148)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (540 more) ..."
+21:15:34.1 (307611025)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307629289)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307648261)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__related_obj (9 more) ..."
+21:15:34.1 (307656973)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307658757)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307665933)|HEAP_ALLOCATE|[21]|Bytes:32
+21:15:34.1 (307675733)|HEAP_ALLOCATE|[21]|Bytes:592
+21:15:34.1 (307692214)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (572 more) ..."
+21:15:34.1 (307709550)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307727513)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307745323)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__sms_templat (4 more) ..."
+21:15:34.1 (307752416)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307755587)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307762718)|HEAP_ALLOCATE|[21]|Bytes:27
+21:15:34.1 (307772592)|HEAP_ALLOCATE|[21]|Bytes:619
+21:15:34.1 (307787131)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (599 more) ..."
+21:15:34.1 (307806230)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307822529)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307842546)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__scheduled_j (7 more) ..."
+21:15:34.1 (307849966)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307851691)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307860320)|HEAP_ALLOCATE|[21]|Bytes:30
+21:15:34.1 (307870663)|HEAP_ALLOCATE|[21]|Bytes:649
+21:15:34.1 (307885259)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (629 more) ..."
+21:15:34.1 (307904606)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (307921204)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (307940853)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__scheduled_t (6 more) ..."
+21:15:34.1 (307948357)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (307950108)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (307958614)|HEAP_ALLOCATE|[21]|Bytes:29
+21:15:34.1 (307968154)|HEAP_ALLOCATE|[21]|Bytes:678
+21:15:34.1 (307983131)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (658 more) ..."
+21:15:34.1 (308001592)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (308020459)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (308039293)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__sender_numb (9 more) ..."
+21:15:34.1 (308048171)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (308049945)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (308063237)|HEAP_ALLOCATE|[21]|Bytes:32
+21:15:34.1 (308073293)|HEAP_ALLOCATE|[21]|Bytes:710
+21:15:34.1 (308090712)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (690 more) ..."
+21:15:34.1 (308109542)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (308128303)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (308146419)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__sender_numb (5 more) ..."
+21:15:34.1 (308154996)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (308156749)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (308163838)|HEAP_ALLOCATE|[21]|Bytes:28
+21:15:34.1 (308173065)|HEAP_ALLOCATE|[21]|Bytes:738
+21:15:34.1 (308188309)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (718 more) ..."
+21:15:34.1 (308207695)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (308225356)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (308242155)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__template__c"
+21:15:34.1 (308249531)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (308251271)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (308259878)|HEAP_ALLOCATE|[21]|Bytes:23
+21:15:34.1 (308268910)|HEAP_ALLOCATE|[21]|Bytes:761
+21:15:34.1 (308283964)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (741 more) ..."
+21:15:34.1 (308303797)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (308319933)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (308338700)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__issent__c"
+21:15:34.1 (308345913)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (308347628)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (308354577)|HEAP_ALLOCATE|[21]|Bytes:21
+21:15:34.1 (308365712)|HEAP_ALLOCATE|[21]|Bytes:782
+21:15:34.1 (308380643)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (762 more) ..."
+21:15:34.1 (308398473)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (308416558)|VARIABLE_SCOPE_BEGIN|[20]|s|String|false|false
+21:15:34.1 (308433454)|VARIABLE_ASSIGNMENT|[20]|s|"tdc_tsw__question__c"
+21:15:34.1 (308440561)|STATEMENT_EXECUTE|[20]
+21:15:34.1 (308443791)|STATEMENT_EXECUTE|[21]
+21:15:34.1 (308450886)|HEAP_ALLOCATE|[21]|Bytes:23
+21:15:34.1 (308460329)|HEAP_ALLOCATE|[21]|Bytes:805
+21:15:34.1 (308474929)|VARIABLE_ASSIGNMENT|[21]|query|"SELECT id,  ownerid, (785 more) ..."
+21:15:34.1 (308494967)|HEAP_ALLOCATE|[20]|Bytes:5
+21:15:34.1 (308514124)|VARIABLE_ASSIGNMENT|[20]|s|null
+21:15:34.1 (308523302)|STATEMENT_EXECUTE|[25]
+21:15:34.1 (308529940)|HEAP_ALLOCATE|[25]|Bytes:13
+21:15:34.1 (308541961)|HEAP_ALLOCATE|[25]|Bytes:818
+21:15:34.1 (308560548)|VARIABLE_ASSIGNMENT|[25]|query|"SELECT id,  ownerid, (798 more) ..."
+21:15:34.1 (308665734)|HEAP_ALLOCATE|[28]|Bytes:1
+21:15:34.1 (308685564)|HEAP_ALLOCATE|[28]|Bytes:1
+21:15:34.1 (308717923)|STATEMENT_EXECUTE|[28]
+21:15:34.1 (308720496)|STATEMENT_EXECUTE|[29]
+21:15:34.1 (308769770)|HEAP_ALLOCATE|[29]|Bytes:817
+21:15:34.1 (308801241)|VARIABLE_ASSIGNMENT|[29]|query|"SELECT id,  ownerid, (797 more) ..."
+21:15:34.1 (308810465)|STATEMENT_EXECUTE|[33]
+21:15:34.1 (308815983)|HEAP_ALLOCATE|[33]|Bytes:6
+21:15:34.1 (308832479)|HEAP_ALLOCATE|[33]|Bytes:31
+21:15:34.1 (308842050)|HEAP_ALLOCATE|[33]|Bytes:848
+21:15:34.1 (308859165)|VARIABLE_ASSIGNMENT|[33]|query|"SELECT id,  ownerid, (828 more) ..."
+21:15:34.1 (308866056)|STATEMENT_EXECUTE|[35]
+21:15:34.1 (308918571)|USER_DEBUG|[35]|DEBUG|SELECT id,  ownerid,  isdeleted,  name,  createddate,  createdbyid,  lastmodifieddate,  lastmodifiedbyid,  systemmodstamp,  lastvieweddate,  lastreferenceddate,  tdc_tsw__account__c,  tdc_tsw__additional_record_id__c,  tdc_tsw__campaignmemberstype__c,  tdc_tsw__campaign__c,  tdc_tsw__contact__c,  tdc_tsw__end_date__c,  tdc_tsw__iseveryday__c,  tdc_tsw__iseverymonth__c,  tdc_tsw__last_sms_sent_date__c,  tdc_tsw__lead__c,  tdc_tsw__message_text__c,  tdc_tsw__next_sms_send_date__c,  tdc_tsw__object_name__c,  tdc_tsw__opportunity__c,  tdc_tsw__phone_api__c,  tdc_tsw__related_object_id__c,  tdc_tsw__sms_template__c,  tdc_tsw__scheduled_jobid__c,  tdc_tsw__scheduled_time__c,  tdc_tsw__sender_number_key__c,  tdc_tsw__sender_number__c,  tdc_tsw__template__c,  tdc_tsw__issent__c,  tdc_tsw__question__c, Account.Name FROM tdc_tsw__Scheduled_Sms__c
+21:15:34.314 (314508467)|CUMULATIVE_LIMIT_USAGE
+21:15:34.314 (314508467)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:15:34.314 (314508467)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:15:34.314 (314508467)|CUMULATIVE_LIMIT_USAGE_END
+
+21:15:34.1 (314597046)|CODE_UNIT_FINISHED|execute_anonymous_apex
+21:15:34.1 (315880303)|EXECUTION_FINISHED

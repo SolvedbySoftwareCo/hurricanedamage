@@ -1,0 +1,62 @@
+38.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+21:56:20.30 (30305490)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (34867246)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (39893797)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (45610187)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (46588155)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (46654902)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (47473584)|SOQL_EXECUTE_BEGIN|[626]|Aggregations:0|select id,name,SMSBodyNew__c  from Message_Template__c where ObjectName__c =: currentObject and SMS_Survey__c = null  order by name ASC Limit 999
+21:56:20.30 (52960418)|SOQL_EXECUTE_END|[626]|Rows:0
+21:56:20.30 (56662912)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (56779247)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (56912095)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (57024406)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (57099816)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (59738041)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (59858162)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (59921486)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (60049025)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (60522805)|SOQL_EXECUTE_BEGIN|[488]|Aggregations:0|SELECT id, Phone FROM Lead WHERE id = '00Q3B000005aR76UAE' 
+21:56:20.30 (80496425)|SOQL_EXECUTE_END|[488]|Rows:1
+21:56:20.30 (81249356)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (81453311)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (81505342)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.30 (81706960)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.121 (121452185)|CUMULATIVE_LIMIT_USAGE
+21:56:20.121 (121452185)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:56:20.121 (121452185)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:56:20.121 (121452185)|CUMULATIVE_LIMIT_USAGE_END
+
+2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:20.68 (70324496)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.68 (70511901)|ENTERING_MANAGED_PKG|tdc_tsw
+21:56:20.68 (73005705)|SOQL_EXECUTE_BEGIN|[355]|Aggregations:0|SELECT id, name, Disable_Incoming_SMS_Sharing__c FROM User WHERE id = :tmpVar1
+21:56:20.68 (79284848)|SOQL_EXECUTE_END|[355]|Rows:1
+21:56:20.68 (80307184)|SOQL_EXECUTE_BEGIN|[367]|Aggregations:0|SELECT CreatedDate,Id,LastModifiedDate,Related_Object_Id__c FROM Message__c WHERE Name = 'Incoming' AND Read__c = false ORDER BY CreatedDate Desc limit 100
+21:56:20.68 (86124489)|SOQL_EXECUTE_END|[367]|Rows:16

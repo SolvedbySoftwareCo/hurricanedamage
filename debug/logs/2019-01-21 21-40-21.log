@@ -1,0 +1,44 @@
+29.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+23:40:20.16 (16723287)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (17070264)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (17169265)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (31086805)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT eContacts__Secondary_Image__c,eContacts__Business_Card__c FROM Contact 
+23:40:20.16 (38705815)|SOQL_EXECUTE_END|[25]|Rows:1
+23:40:20.16 (39637706)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (39677490)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (39733010)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (39869329)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (39914125)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (39969903)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.16 (40060569)|ENTERING_MANAGED_PKG|eContacts
+23:40:20.45 (45511079)|CUMULATIVE_LIMIT_USAGE
+23:40:20.45 (45511079)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:40:20.45 (45511079)|LIMIT_USAGE_FOR_NS|eContacts|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:40:20.45 (45511079)|CUMULATIVE_LIMIT_USAGE_END
+

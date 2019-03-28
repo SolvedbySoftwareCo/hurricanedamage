@@ -1,0 +1,47 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+20:47:13.72 (72571513)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (80000289)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (80104268)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (80185916)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (80269186)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (80352514)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (80412833)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (80505663)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (129515234)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (130929171)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (138985737)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (139057684)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.72 (141210377)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT ProfileId FROM User WHERE Profile.Name = 'System Administrator' LIMIT 1
+20:47:13.72 (152274142)|SOQL_EXECUTE_END|[141]|Rows:1
+20:47:13.72 (153025751)|ENTERING_MANAGED_PKG|tdc_tsw
+20:47:13.288 (288210755)|CUMULATIVE_LIMIT_USAGE
+20:47:13.288 (288210755)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:47:13.288 (288210755)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:47:13.288 (288210755)|CUMULATIVE_LIMIT_USAGE_END
+

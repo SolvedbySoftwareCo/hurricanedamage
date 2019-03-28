@@ -1,0 +1,22 @@
+44.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+21:56:30.0 (117370)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:30.0 (2196588)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:56:30.0 (2358509)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:56:30.62 (62595224)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:30.62 (63788088)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:56:30.86 (86353935)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:30.86 (87467791)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:56:30.91 (91549405)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:30.91 (92640728)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:56:30.91 (94096387)|SOQL_EXECUTE_BEGIN|[13]|Aggregations:0|SELECT id, taf_listbrowse__BrowsePlan__c, taf_listbrowse__CurrentBrowsePlan__c, taf_listbrowse__Object__c, taf_listbrowse__RecordCount__c, taf_listbrowse__Records__c FROM taf_listbrowse__List__c WHERE (taf_listbrowse__Object__c = :tmpVar1 AND taf_listbrowse__BrowsePlan__c = 'Active' AND createdById = :tmpVar2) ORDER BY lastmodifieddate DESC NULLS FIRST LIMIT 1
+21:56:30.91 (101854472)|SOQL_EXECUTE_END|[13]|Rows:0
+21:56:30.104 (104928842)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:30.104 (106053575)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:56:30.104 (107026050)|SOQL_EXECUTE_BEGIN|[22]|Aggregations:0|SELECT id, taf_listbrowse__CurrentBrowsePlan__c, taf_listbrowse__Object__c, taf_listbrowse__RecordCount__c, taf_listbrowse__Records__c FROM taf_listbrowse__List__c WHERE (taf_listbrowse__Object__c = :tmpVar1 AND taf_listbrowse__BrowsePlan__c = 'Favorites' AND createdById = :tmpVar2) ORDER BY lastmodifieddate DESC NULLS FIRST LIMIT 1
+21:56:30.104 (112795387)|SOQL_EXECUTE_END|[22]|Rows:0
+21:56:30.115 (115944285)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:30.115 (117002101)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:56:30.370 (370017450)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:56:30.370 (371334591)|ENTERING_MANAGED_PKG|LC_Rss
+21:56:30.370 (371442374)|ENTERING_MANAGED_PKG|LC_Rss
+21:56:30.370 (374197940)|ENTERING_MANAGED_PKG|LC_Rss

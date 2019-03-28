@@ -1,0 +1,47 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+23:39:40.15 (15526752)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (15925340)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (25442273)|SOQL_EXECUTE_BEGIN|[67]|Aggregations:0|SELECT Id, IsSandbox, OrganizationType, Name FROM Organization LIMIT 1
+23:39:40.15 (30404162)|SOQL_EXECUTE_END|[67]|Rows:1
+23:39:40.15 (30757589)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (32511506)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (32571237)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (32612970)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (33819936)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (33874900)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.15 (33978977)|ENTERING_MANAGED_PKG|tdc_tsw
+23:39:40.50 (50199970)|CUMULATIVE_LIMIT_USAGE
+23:39:40.50 (50199970)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:39:40.50 (50199970)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:39:40.50 (50199970)|CUMULATIVE_LIMIT_USAGE_END
+
+ Apex push calls: 0 out of 10
+
+23:39:40.50 (50532402)|CUMULATIVE_LIMIT_USAGE_END
+

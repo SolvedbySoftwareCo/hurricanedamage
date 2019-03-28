@@ -1,0 +1,91 @@
+44.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: tdc_tsw__Scheduled_Sms__c outSMS = new tdc_tsw__Scheduled_Sms__c();
+Execute Anonymous: outSMS.tdc_tsw__message_text__c = 'XXXXXX';
+Execute Anonymous: outSMS.tdc_tsw__object_name__c = 'User';
+Execute Anonymous: outSMS.tdc_tsw__phone_api__c = 'mobilephone';
+Execute Anonymous: outSMS.Name = '0051H000009gxp8QAA';
+Execute Anonymous: outSMS.tdc_tsw__scheduled_time__c = datetime.now().addminutes(1);
+Execute Anonymous: outSMS.tdc_tsw__sender_number_key__c = '0051H000009gxp8QAA17065037067';
+Execute Anonymous: insert outSMS;
+21:26:29.2 (2424692)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:26:29.2 (2487716)|EXECUTION_STARTED
+21:26:29.2 (2495620)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+21:26:29.2 (2894997)|VARIABLE_SCOPE_BEGIN|[1]|outSMS|tdc_tsw__Scheduled_Sms__c|true|false
+21:26:29.2 (3226232)|HEAP_ALLOCATE|[72]|Bytes:3
+21:26:29.2 (3309947)|HEAP_ALLOCATE|[77]|Bytes:152
+21:26:29.2 (3366285)|HEAP_ALLOCATE|[342]|Bytes:408
+21:26:29.2 (3398863)|HEAP_ALLOCATE|[355]|Bytes:408
+21:26:29.2 (3452621)|HEAP_ALLOCATE|[467]|Bytes:48
+21:26:29.2 (3513370)|HEAP_ALLOCATE|[139]|Bytes:6
+21:26:29.2 (3616201)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:15
+21:26:29.2 (3995693)|STATEMENT_EXECUTE|[1]
+21:26:29.2 (4000561)|STATEMENT_EXECUTE|[1]
+21:26:29.2 (4049476)|HEAP_ALLOCATE|[1]|Bytes:4
+21:26:29.2 (4358004)|VARIABLE_ASSIGNMENT|[1]|outSMS|{}|0x7891fe87
+21:26:29.2 (4378803)|STATEMENT_EXECUTE|[2]
+21:26:29.2 (4386613)|HEAP_ALLOCATE|[2]|Bytes:6
+21:26:29.2 (4759784)|VARIABLE_ASSIGNMENT|[2]|this.tdc_tsw__Message_Text__c|"XXXXXX"|0x7891fe87
+21:26:29.2 (4776243)|STATEMENT_EXECUTE|[3]
+21:26:29.2 (4782564)|HEAP_ALLOCATE|[3]|Bytes:4
+21:26:29.2 (4879842)|VARIABLE_ASSIGNMENT|[3]|this.tdc_tsw__Object_Name__c|"User"|0x7891fe87
+21:26:29.2 (4899680)|STATEMENT_EXECUTE|[4]
+21:26:29.2 (4922969)|HEAP_ALLOCATE|[4]|Bytes:11
+21:26:29.2 (5017051)|VARIABLE_ASSIGNMENT|[4]|this.tdc_tsw__Phone_Api__c|"mobilephone"|0x7891fe87
+21:26:29.2 (5031592)|STATEMENT_EXECUTE|[5]
+21:26:29.2 (5039250)|HEAP_ALLOCATE|[5]|Bytes:18
+21:26:29.2 (5143595)|VARIABLE_ASSIGNMENT|[5]|this.Name|"0051H000009gxp8QAA"|0x7891fe87
+21:26:29.2 (5159024)|STATEMENT_EXECUTE|[6]
+21:26:29.2 (5270033)|HEAP_ALLOCATE|[6]|Bytes:56
+21:26:29.2 (5342984)|HEAP_ALLOCATE|[6]|Bytes:56
+21:26:29.2 (5559120)|VARIABLE_ASSIGNMENT|[6]|this.tdc_tsw__Scheduled_Time__c|"2019-01-21T02:27:29.419Z"|0x7891fe87
+21:26:29.2 (5576886)|STATEMENT_EXECUTE|[7]
+21:26:29.2 (5582754)|HEAP_ALLOCATE|[7]|Bytes:29
+21:26:29.2 (5679986)|VARIABLE_ASSIGNMENT|[7]|this.tdc_tsw__Sender_Number_Key__c|"0051H000009gxp8QAA17 (9 more) ..."|0x7891fe87
+21:26:29.2 (5693600)|STATEMENT_EXECUTE|[8]
+21:26:29.2 (5757782)|HEAP_ALLOCATE|[50]|Bytes:5
+21:26:29.2 (5791503)|HEAP_ALLOCATE|[56]|Bytes:5
+21:26:29.2 (5809908)|HEAP_ALLOCATE|[64]|Bytes:7
+21:26:29.2 (5876075)|HEAP_ALLOCATE|[8]|Bytes:8
+21:26:29.2 (5949107)|DML_BEGIN|[8]|Op:Insert|Type:tdc_tsw__Scheduled_Sms__c|Rows:1
+21:26:29.2 (6020358)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+21:26:29.70 (70527357)|ENTERING_MANAGED_PKG|tdc_tsw
+21:26:29.70 (74432079)|ENTERING_MANAGED_PKG|tdc_tsw
+21:26:29.70 (75130543)|ENTERING_MANAGED_PKG|tdc_tsw
+21:26:29.70 (75247412)|ENTERING_MANAGED_PKG|tdc_tsw
+21:26:29.78 (78024824)|CUMULATIVE_LIMIT_USAGE
+21:26:29.78 (78024824)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:26:29.78 (78024824)|CUMULATIVE_LIMIT_USAGE_END
+
+21:26:29.2 (88137300)|DML_END|[8]
+21:26:29.91 (91789098)|CUMULATIVE_LIMIT_USAGE
+21:26:29.91 (91789098)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+21:26:29.91 (91789098)|CUMULATIVE_LIMIT_USAGE_END
+
+21:26:29.2 (91841461)|CODE_UNIT_FINISHED|execute_anonymous_apex
+21:26:29.2 (92963310)|EXECUTION_FINISHED

@@ -1,0 +1,48 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+20:36:50.108 (108433210)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (111210162)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (111277043)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (113314624)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT ProfileId FROM User WHERE Profile.Name = 'System Administrator' LIMIT 1
+20:36:50.108 (123968595)|SOQL_EXECUTE_END|[141]|Rows:1
+20:36:50.108 (124753068)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (165318884)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (170069985)|SOQL_EXECUTE_BEGIN|[1403]|Aggregations:0|SELECT id, state, CronJobDetail.JobType, CronJobDetail.Name FROM CronTrigger WHERE CronJobDetail.Name = 'x360_SMS_Relate_To_Converted_Records'
+20:36:50.108 (175153273)|SOQL_EXECUTE_END|[1403]|Rows:0
+20:36:50.108 (175704374)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (175895390)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (292220904)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (292414713)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (372617390)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (421578301)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.108 (423474123)|ENTERING_MANAGED_PKG|tdc_tsw
+20:36:50.559 (559172708)|CUMULATIVE_LIMIT_USAGE
+20:36:50.559 (559172708)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:36:50.559 (559172708)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:36:50.559 (559172708)|CUMULATIVE_LIMIT_USAGE_END
+

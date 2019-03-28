@@ -1,0 +1,35 @@
+44.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+21:48:30.0 (111292)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.0 (2896448)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:48:30.0 (3054426)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:48:30.66 (66055252)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.66 (67594943)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:48:30.94 (94354046)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.94 (96273746)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:48:30.120 (120865015)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.120 (122213970)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:48:30.120 (182241870)|SOQL_EXECUTE_BEGIN|[13]|Aggregations:0|SELECT id, taf_listbrowse__BrowsePlan__c, taf_listbrowse__CurrentBrowsePlan__c, taf_listbrowse__Object__c, taf_listbrowse__RecordCount__c, taf_listbrowse__Records__c FROM taf_listbrowse__List__c WHERE (taf_listbrowse__Object__c = :tmpVar1 AND taf_listbrowse__BrowsePlan__c = 'Active' AND createdById = :tmpVar2) ORDER BY lastmodifieddate DESC NULLS FIRST LIMIT 1
+21:48:30.120 (192430498)|SOQL_EXECUTE_END|[13]|Rows:0
+21:48:30.196 (196436392)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.196 (197817228)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:48:30.196 (198965974)|SOQL_EXECUTE_BEGIN|[22]|Aggregations:0|SELECT id, taf_listbrowse__CurrentBrowsePlan__c, taf_listbrowse__Object__c, taf_listbrowse__RecordCount__c, taf_listbrowse__Records__c FROM taf_listbrowse__List__c WHERE (taf_listbrowse__Object__c = :tmpVar1 AND taf_listbrowse__BrowsePlan__c = 'Favorites' AND createdById = :tmpVar2) ORDER BY lastmodifieddate DESC NULLS FIRST LIMIT 1
+21:48:30.196 (208791207)|SOQL_EXECUTE_END|[22]|Rows:0
+21:48:30.213 (213518059)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.213 (215268095)|ENTERING_MANAGED_PKG|taf_listbrowse
+21:48:30.321 (321623538)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.321 (323327429)|ENTERING_MANAGED_PKG|LC_Rss
+21:48:30.321 (323441831)|ENTERING_MANAGED_PKG|LC_Rss
+21:48:30.321 (326488150)|ENTERING_MANAGED_PKG|LC_Rss
+21:48:30.337 (337684226)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.337 (339534137)|ENTERING_MANAGED_PKG|mvc
+21:48:30.337 (339679049)|ENTERING_MANAGED_PKG|mvc
+21:48:30.337 (339956720)|ENTERING_MANAGED_PKG|mvc
+21:48:30.337 (340328558)|ENTERING_MANAGED_PKG|mvc
+21:48:30.337 (340777062)|ENTERING_MANAGED_PKG|mvc
+21:48:30.337 (348482961)|ENTERING_MANAGED_PKG|mvc
+21:48:30.337 (348586958)|ENTERING_MANAGED_PKG|mvc
+21:48:30.337 (351034352)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT id, Subject, StartDateTime, EndDateTime, Location, RecurrenceActivityId, IsAllDayEvent, ShowAs, description FROM Event WHERE (IsRecurrence = FALSE AND OwnerId = :tmpVar1 AND startdatetime >= :tmpVar2 AND enddatetime <= :tmpVar3) ORDER BY startdatetime DESC NULLS FIRST LIMIT 5000
+21:48:30.337 (363362855)|SOQL_EXECUTE_END|[8]|Rows:0
+21:48:30.337 (364755147)|ENTERING_MANAGED_PKG|mvc
+21:48:30.368 (368776847)|USER_INFO|[EXTERNAL]|0051H000009gxp8|chanida.dev2@solvedbysoftwareco.com|Eastern Standard Time|GMT-05:00
+21:48:30.368 (370345021)|ENTERING_MANAGED_PKG|mvc

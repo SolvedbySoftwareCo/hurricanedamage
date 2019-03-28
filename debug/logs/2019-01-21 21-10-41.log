@@ -1,0 +1,44 @@
+29.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+23:10:40.20 (20195852)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (20795266)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (20929402)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (80686528)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT eContacts__Secondary_Image__c,eContacts__Business_Card__c FROM Contact 
+23:10:40.20 (117813489)|SOQL_EXECUTE_END|[25]|Rows:1
+23:10:40.20 (119522067)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (119566103)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (119611595)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (119726130)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (119759590)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (119804379)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.20 (119897155)|ENTERING_MANAGED_PKG|eContacts
+23:10:40.127 (127652789)|CUMULATIVE_LIMIT_USAGE
+23:10:40.127 (127652789)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:10:40.127 (127652789)|LIMIT_USAGE_FOR_NS|eContacts|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:10:40.127 (127652789)|CUMULATIVE_LIMIT_USAGE_END
+

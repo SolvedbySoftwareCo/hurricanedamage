@@ -1,0 +1,40 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+20:57:48.0 (868486)|ENTERING_MANAGED_PKG|tdc_tsw
+20:57:48.0 (4407625)|SOQL_EXECUTE_BEGIN|[149]|Aggregations:0|SELECT id, Question_Label__c, Question__c, Question_Text__c, Object__c, First_Question__c, Survey__c FROM Question__c WHERE id = :tmpVar1 LIMIT 1
+20:57:48.0 (10948616)|SOQL_EXECUTE_END|[149]|Rows:1
+20:57:48.0 (11934760)|DML_BEGIN|[184]|Op:Update|Type:tdc_tsw__Question__c|Rows:1
+20:57:48.0 (22302006)|ENTERING_MANAGED_PKG|tdc_tsw
+20:57:48.0 (23450947)|ENTERING_MANAGED_PKG|tdc_tsw
+20:57:48.0 (23953204)|ENTERING_MANAGED_PKG|tdc_tsw
+20:57:48.25 (25492499)|CUMULATIVE_LIMIT_USAGE
+20:57:48.25 (25492499)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:57:48.25 (25492499)|LIMIT_USAGE_FOR_NS|tdc_tsw|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:57:48.25 (25492499)|CUMULATIVE_LIMIT_USAGE_END
+
+20:57:48.0 (57835640)|DML_END|[184]

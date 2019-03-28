@@ -1,0 +1,20 @@
+{
+    "projectName": "hurricanedamage",
+    "username": "chanida.dev2@solvedbysoftwareco.com",
+    "id": "04618be0-1ae7-11e9-8680-1978f9897e83",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://hurricanedamage--lookup.my.salesforce.com",
+    "workspace": "/Users/Chanida/FreelanceBackUp",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "CustomObject",
+        "Flow",
+        "StaticResource",
+        "Workflow"
+    ]
+}
